@@ -132,7 +132,15 @@ int main()
 			}
 		}
 	}
-	
+	//edit row corresponding to sink:
+	for(int j=0; j<N; j++){
+		if(j==sink-1){
+			P(sink-1,j) = 1.0;
+		}
+		else{
+			P(sink-1,j) = 0.0;
+		}
+	}	
 	cout << "P:" << endl << P << endl;
 
 	//Find all possible paths:****************************************************************************
