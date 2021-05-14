@@ -1,6 +1,7 @@
 //Code that implements the algorithm in Papakonstaninou et al (2018). 
 //This version averages over the 'Random' version of the algorithm. 
 //It is referred to as 'Average' in the NMA and RW manuscript. 
+//The code relies on the Eigen library, the download files and documentation can be found here: http://eigen.tuxfamily.org/index.php?title=Main_Page
 
 #include <iostream>
 #include<Eigen/Dense>
