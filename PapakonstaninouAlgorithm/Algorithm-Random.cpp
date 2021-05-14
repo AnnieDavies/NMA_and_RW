@@ -63,6 +63,10 @@ int main()
 	time_t start, end; 
 	time(&start);
 	
+	//read in the row of the h matrix that relates to the comparison source-sink
+	//this should include all possible pairwise compairsons
+	//if a certain pairwise compairson has no direct evidence set this H element = 0
+	//comparison should be ordered as such: 12, 13, 14..1N, 23, 24,...2N...(N-1)N
 	VectorXd h(N*(N-1)/2);
 	int i0 = 0;
 	double value0;
@@ -74,11 +78,7 @@ int main()
 		i0++;
 	}
 
-	
-	
-	
 	cout << "h flow for 13" << endl << h << endl;
-
 	
 	//***************************************************************************************
 	//Create transition matrix:**************************************************************
