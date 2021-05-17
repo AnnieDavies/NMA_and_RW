@@ -72,9 +72,7 @@ Codes: (written by A Davies 2021)
 
   Using the data provided, a transition matrix for a RW on the aggregate network is derived
   
-  Using the analogy to electrical networks, the code calculates the nodal voltages and edge currents
-  
-  ...for a circuit with a battery attached across source-sink where v(source)-1 and v(sink)=0
+  Using the analogy to electrical networks, the code calculates the nodal voltages and edge currents for a circuit with a battery attached across source-sink where v(source)-1 and v(sink)=0
   
   The edge currents are then normalised by the total current leaving the source 
   
