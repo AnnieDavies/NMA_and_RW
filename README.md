@@ -17,6 +17,7 @@ Folders:
 Contains two codes for working out evidence flow networks. 
 
   a. AggregateHatMatrix.cpp
+  
        Performs a frequentist NMA using the graph theoretical approach both as a one-step and two-step method (method described in Section 3.1). 
        
        Yields the hat matrix of the aggregate model - each row describes an evidence flow network for the comparison it represents.
