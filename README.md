@@ -90,7 +90,7 @@ Contains two codes for working out evidence flow networks.
       If a certain pair of nodes are not connected by an edge in the evidence flow network then the flow is 0. 
       
       
-3. PapakonstaninouAlgorithm
+3. PapakonstantinouAlgorithm
 
   Obtaining the evidence streams and proportion contributions from the algorithm in:
   
