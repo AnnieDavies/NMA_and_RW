@@ -1,4 +1,4 @@
-README for the folder EvidenceFlow
+# Folder: EvidenceFlow
 
 N = number of nodes
 
