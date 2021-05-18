@@ -1,4 +1,4 @@
-# README for the folder PapakonstantinouAlgorithm
+# Folder: PapakonstantinouAlgorithm
 
 3 codes containing 3 versions of the evidence stream algorithm in Papakontaninou et al (2018); Shortest, Random and Average.
 
