@@ -188,4 +188,4 @@ Others are not explicitly presented in the paper.
             
             iv. T_13.txt = The transition matrix for a RW on the aggregate network for the Depression data (Figure 6) moving from node 1 to node 3 (calculated from Eq (10) and Wagg.txt, presented in Eq (23), code: EvidenceFlow_RWanalytical.cpp)
             
-            v. U_13.txt = The transition matrix for a RW on the evidence flow network for comaprison 1-3 in the Depression data (Figure 7) moving from node 1 to node 3 (calculated from Eq (17) and Wagg.txt, presented in Eq (24), code: Streams_contributions_RWanalytical.cpp)
+            v. U_13.txt = The transition matrix for a RW on the evidence flow network for comaprison 1-3 in the Depression data (Figure 7) moving from node 1 to node 3 (calculated from Eq (17) and RW_flow_13.txt, presented in Eq (24), code: Streams_contributions_RWanalytical.cpp)
