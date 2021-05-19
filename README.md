@@ -152,9 +152,13 @@ Others are not explicitly presented in the paper.
           
           Files refer to the following results in the paper NMA and RW
           
-            i. Short-Prop.txt = 3rd column in Table 4 = proportion contributions as estimated by the algorithm 'Shortest' (code: Algorithmm-Shortest.cpp)
+            i. Av-Prop.txt = 5th column in Table 4 = proportion contributions as estimated by the algorithm 'Average' (code: Algorithmm-Average.cpp)
             
-            ii. Short-Stream.txt = 4th column in Table 3 = streams as estimated by the algorithm 'Shortest'  (code: Algorithmm-Shortest.cpp), paths are labelled by their composite nodes
+            ii. Av-Stream.txt = 6th column in Table 3 = streams as estimated by the algorithm 'Average'  (code: Algorithmm-Average.cpp)
+          
+            iii. Short-Prop.txt = 3rd column in Table 4 = proportion contributions as estimated by the algorithm 'Shortest' (code: Algorithmm-Shortest.cpp)
+            
+            iv. Short-Stream.txt = 4th column in Table 3 = streams as estimated by the algorithm 'Shortest'  (code: Algorithmm-Shortest.cpp), paths are labelled by their composite nodes
             
   b. NMA_results
   
