@@ -18,15 +18,15 @@ Contains two codes for working out evidence flow networks.
 
   a. AggregateHatMatrix.cpp
   
-       Performs a frequentist NMA using the graph theoretical approach both as a one-step and two-step method (method described in Section 3.1). 
+       Performs a frequentist NMA using the graph theoretical approach both as a one-step and two-step method (method described in Section 3). 
        
        Yields the hat matrix of the aggregate model - each row describes an evidence flow network for the comparison it represents.
        
        This code was used to obtain the following results in the paper NMA and RW:
        
-         i. The aggregate weight matrix in Appendix D (= aggregate weights listed in Figure 6)
+         i. The aggregate weight matrix in Appendix F (= aggregate weights listed in Figure 6)
          
-         ii. The hat matrix of the aggregate model listed in Appendix D
+         ii. The hat matrix of the aggregate model listed in Appendix F
          
  b. EvidenceFlow_RWanalytical.cpp
  
