@@ -1,7 +1,7 @@
 # NMA_and_RW
-Codes for the manuscript Network meta-analysis and random walks.
+Data, codes and results for the manuscript Network meta-analysis and random walks.
 
-The codes are separated into three files each with their own more detailed README file. 
+The files are separated into four folders each with their own more detailed README file. 
 Each code is used to obtain a set of results presented in the manuscript NMA and RW. 
 The codes are applied to the Depression data set described in: 
 Rücker G, Schwarzer G. Reduce dimension or reduce weights? Comparing two approaches to multi-arm studies in networkmeta-analysis.Stat Med2014; 33(25): 4353-4369
