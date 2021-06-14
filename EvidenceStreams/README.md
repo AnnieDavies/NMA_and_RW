@@ -7,7 +7,7 @@ Code: (A Davies 2021)
   
   This code was used to obtain the following results in the paper NMA and RW:
   
-    a. The transition matrix on the evidence flow network (Eq 24)
+    a. The transition matrix on the evidence flow network (Eq 27)
     
     b. Columns 2 and 3 of Table 3 (evidence streams)
     
