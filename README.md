@@ -1,4 +1,4 @@
-# NMA_and_RW
+# Network meta-analysis and random walks: Data, codes and results
 Data, codes and results for the manuscript Network meta-analysis and random walks.
 
 The files are separated into four folders each with their own more detailed README file. 
