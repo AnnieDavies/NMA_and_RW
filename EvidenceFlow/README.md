@@ -15,9 +15,9 @@ Codes: (written by A Davies 2021)
 
   This code was used to obtain the following results in the paper NMA and RW:
 
-    a. The aggregate weight matrix in Appendix D (= aggregate weights listed in Figure 6)
+    a. The aggregate weight matrix in Appendix F (= aggregate weights listed in Figure 6)
 
-    b. The hat matrix of the aggregate model listed in Appendix D
+    b. The hat matrix of the aggregate model listed in Appendix F
 
   C++ code that performs a frequentist NMA using the graph theoretical approach
   
@@ -52,7 +52,7 @@ Codes: (written by A Davies 2021)
 
   This code was used to obtain the following results in the paper NMA and RW:
 
-    a. The transition matrix for a RW on the aggregate network (Eq (23))
+    a. The transition matrix for a RW on the aggregate network (Eq (26))
   
     b. The evidence flow network for comparison 1-3 of the Depression data shown in Figure 7
   
