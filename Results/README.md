@@ -2,7 +2,7 @@
 
 Files containing the results from the paper. 
 
-Some are results presented in the paper but here we quote them to a higher precision. 
+Some of these are presented in the paper but here we quote them to a higher precision. 
 
 Others are not explicitly presented in the paper.
 
