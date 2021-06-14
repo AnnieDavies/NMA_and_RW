@@ -142,7 +142,7 @@ Contains two codes for working out evidence flow networks.
 
 Files containing the results from the paper. 
 
-Some are results presented in the paper but quoted to higher precision. 
+Some of these are presented in the paper but here they are quoted to higher precision. 
 
 Others are not explicitly presented in the paper.
 
