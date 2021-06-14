@@ -26,7 +26,7 @@ Others are not explicitly presented in the paper.
           
           All produced from the code AggregateHMatrix.cpp
           
-            i. Hat.txt = hat matrix of the aggregate model (calculated from Eq (5), presented in Appendix D)
+            i. Hat.txt = hat matrix of the aggregate model (calculated from Eq (5), presented in Appendix F)
             
             ii. LOR_dir.txt = theta^(dir) = direct estimates as log odds ratios (calculated from Eq (1))
             
@@ -36,7 +36,7 @@ Others are not explicitly presented in the paper.
             
             v. OR_net.txt = theta^(net) = network estimates as odds ratios (exponential of LOR_net.txt)
             
-            vi. Wagg.txt = aggregate weight matrix (calculated from Eq (2), presented in Appendix D)
+            vi. Wagg.txt = aggregate weight matrix (calculated from Eq (2), presented in Appendix F)
             
             vii. Wfull.txt = full adjusted weight matrix (calculated from the adjustment method for multi-arm trials - see Rucker and Schwarzer 2014)
  
@@ -45,15 +45,15 @@ Others are not explicitly presented in the paper.
 
           Results from the random walk approach.
           
-            i. RW_flow_13.txt = the evidence flow for comparison 1-3 of the Depression data as estimated by the analytical RW approach (see Section 3.4 and Appendix C.2, presented in Figure 7, code: EvidenceFlow_RWanalytical.cpp)
+            i. RW_flow_13.txt = the evidence flow for comparison 1-3 of the Depression data as estimated by the analytical RW approach (see Section 4.3 and Appendix E, presented in Figure 7, code: EvidenceFlow_RWanalytical.cpp)
             
-            ii. RW_prop.txt = proportion contributions to the network comparison 1-3 in the Depression data as estimated by the RW approach (see Section 4.2, presented in 2nd column of Table 4, code: Streams_contributions_RWanalytical.cpp)
+            ii. RW_prop.txt = proportion contributions to the network comparison 1-3 in the Depression data as estimated by the RW approach (see Section 5.3, presented in 2nd column of Table 4, code: Streams_contributions_RWanalytical.cpp)
             
-            iii. RW_stream.txt = evidence streams (flow through paths) for the network comparison 1-3 in the Depression data set as estimated by the RW approach (see section 4.2, presented in 3rd column of Table 3, code: Streams_contributions_RWanalytical.cpp)
+            iii. RW_stream.txt = evidence streams (flow through paths) for the network comparison 1-3 in the Depression data set as estimated by the RW approach (see section 5.3, presented in 3rd column of Table 3, code: Streams_contributions_RWanalytical.cpp)
             
-            iv. T_13.txt = The transition matrix for a RW on the aggregate network for the Depression data (Figure 6) moving from node 1 to node 3 (calculated from Eq (10) and Wagg.txt, presented in Eq (23), code: EvidenceFlow_RWanalytical.cpp)
+            iv. T_13.txt = The transition matrix for a RW on the aggregate network for the Depression data (Figure 6) moving from node 1 to node 3 (calculated from Eq (12) and Wagg.txt, presented in Eq (26), code: EvidenceFlow_RWanalytical.cpp)
             
-            v. U_13.txt = The transition matrix for a RW on the evidence flow network for comaprison 1-3 in the Depression data (Figure 7) moving from node 1 to node 3 (calculated from Eq (17) and RW_flow_13.txt, presented in Eq (24), code: Streams_contributions_RWanalytical.cpp)
+            v. U_13.txt = The transition matrix for a RW on the evidence flow network for comaprison 1-3 in the Depression data (Figure 7) moving from node 1 to node 3 (calculated from Eq (20) and RW_flow_13.txt, presented in Eq (27), code: Streams_contributions_RWanalytical.cpp)
 
 
 Order of pairwise comparisons in Hat.txt (rows and columns), LOR_dir.txt, LOR_net.txt, OR_dir.txt. OR_net.txt, Wagg.txt (rows and columns), RW_flow_13.txt:
