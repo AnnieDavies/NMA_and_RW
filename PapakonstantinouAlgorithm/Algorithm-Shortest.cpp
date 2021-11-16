@@ -1,5 +1,5 @@
 //Code that implements the algorithm in Papakonstaninou et al (2018). 
-//This version picks paths from shortest to longest
+//This version picks paths from shortest to longest (but does not assign costs)
 //It is referred to as 'Shortest' in the NMA and RW manuscript. 
 //The code relies on the Eigen library, the download files and documentation can be found here: http://eigen.tuxfamily.org/index.php?title=Main_Page
 
