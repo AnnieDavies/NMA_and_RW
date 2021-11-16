@@ -186,7 +186,7 @@ int main()
 				
 	}
 	
-	double sumQ = 100; //sumQ keeps track of whether all the edge flows has been assigned to paths
+	double sumQ = 100; //sumQ keeps track of whether all the edge flows have been assigned to paths
 	
 	//keep track of which paths have been selected
 	vector<int> RandPath;  //vector storing the labels (1...no. of paths) of paths that have been selected
