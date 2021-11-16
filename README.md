@@ -10,9 +10,9 @@ The relevant data is given in files in the appropriate folders.
 
 All codes are in C++ and were written by A Davies (2021).
 
-Folders:
+## Folders:
 
-1. EvidenceFlow
+## 1. EvidenceFlow
 
 Contains two codes for working out evidence flow networks. 
 
@@ -61,7 +61,7 @@ Contains two codes for working out evidence flow networks.
         v. Ba.txt = the edge-incidence matrix (KxN) of the aggregate network, describes which treatment comparisons are represented by each edge
         
 
-2. EvidenceStreams
+## 2. EvidenceStreams
 
   Obtaining the evidence streams and proportion contributions from the RW approach.
   
@@ -90,7 +90,7 @@ Contains two codes for working out evidence flow networks.
       If a certain pair of nodes are not connected by an edge in the evidence flow network then the flow is 0. 
       
       
-3. PapakonstantinouAlgorithm
+## 3. PapakonstantinouAlgorithm
 
   Obtaining the evidence streams and proportion contributions from the algorithm in:
   
@@ -138,7 +138,7 @@ Contains two codes for working out evidence flow networks.
       
       If a certain pair of nodes are not connected by an edge in the evidence flow network then the flow is 0.
       
-4. Results
+## 4. Results
 
 Files containing the results from the paper. 
 
