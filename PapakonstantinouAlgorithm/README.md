@@ -45,7 +45,7 @@ Files:
 
 Describes the evidence flow through each edge from node 1 to node 3 on the evidence flow network for the Depression data set (Rucker and Schwarzer 2014)
 
-Flow is obtained by the row of the hat matrix correpsonding to comparison 13
+Flow is obtained by the row of the hat matrix correpsonding to comparison 13 (see row 1 Hat_agg_netmeta.xlsx in RCodeDataResults)
 
 (or, equivalently, using the analytical RW approach - see folder EvidenceFlow)
 
