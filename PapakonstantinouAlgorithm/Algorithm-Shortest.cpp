@@ -179,25 +179,12 @@ int main()
 
 	//Papakonstaninou algorithm 'Shortest':****************************************************************
 	
-
-	//when there are multiple paths of the same length we must select from smallest to largest cost
-	//create vector of costs 
-	vector<double> Cost(all_paths.size());
-
-	//assign cost of each path
+	vector<double> Length(all_paths.size());
+	//assign length of each path
 	for (int i = 0; i < all_paths.size(); i++) {
-		double sum_costi = 0.0;
-		
-		for(int k=0; k<all_paths[i].size()-1; k++){
-			//for each edge in path i + (2-flow in that edge) to cost of path
-			sum_costi = sum_costi + (2.0-Q(all_paths[i][k]-1,all_paths[i][k+1]-1));
-			
-		}
-		Cost[i] = sum_costi;
-		
+		Length[i] = all_paths[i].size();
+				
 	}
-	
-
 	
 	double sumQ = 100; //sumQ keeps track of whether all the edge flows has been assigned to paths
 	
@@ -208,10 +195,10 @@ int main()
 
 		int i; //path label
 		
-		//find path with minimum cost
-		int Min_index = min_element(Cost.begin(), Cost.end())-Cost.begin();
-		double Min_Cost = *min_element(Cost.begin(), Cost.end());
-		cout << "minimum cost = " << Min_Cost << ", gives path = " << Min_index << endl;
+		//find shortest path (first shortest)
+		int Min_index = min_element(Length.begin(), Length.end())-Length.begin();
+		double Min_len = *min_element(Length.begin(), Length.end());
+		cout << "minimum length = " << Min_len << ", gives path = " << Min_index << endl;
 		i = Min_index;
 
 		RandPath.push_back(i);
@@ -249,29 +236,15 @@ int main()
 			}
 		}
 		
-		
-		//redefine costs
 		for (int l = 0; l < all_paths.size(); l++) {
-			double sum_costl = 0.0;
-			//for all paths that have been selected so far...
-			//set this cost to be very large so that it is not selected again
-			if(count(RandPath.begin(), RandPath.end(), l)){
-				Cost[l] = 1e10;  
-			}
-			//otherwise work out the new cost in each path given the new edge flows
-			else{
-				for (int j = 0; j < all_paths[l].size(); j++) {
-					cout << all_paths[l][j] << ", ";					
-				}
-				for(int k=0; k<all_paths[l].size()-1; k++){
-					sum_costl = sum_costl + (2.0-Q(all_paths[l][k]-1,all_paths[l][k+1]-1));
-					
-				}
-				Cost[l] = sum_costl;
-			}
 			
+			//for all paths that have been selected so far...
+			//set this length to be very large so that it is not selected again
+			if(count(RandPath.begin(), RandPath.end(), l)){
+				Length[l] = 1e10;  
+			}
 		}
-
+	
 		//if there is still flow left then select another path
 		
 	}//end of iterations
@@ -320,8 +293,6 @@ int main()
 		}
 		
 	}
-
-
 
 	time(&end);
 
