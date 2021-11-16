@@ -1,14 +1,14 @@
 # Network meta-analysis and random walks: Data, codes and results
 Data, codes and results for the manuscript Network meta-analysis and random walks.
 
-The files are separated into four folders each with their own more detailed README file. 
+The files are separated into five folders each with their own more detailed README file. 
 Each code is used to obtain a set of results presented in the manuscript NMA and RW. 
 The codes are applied to the Depression data set described in: 
 Rücker G, Schwarzer G. Reduce dimension or reduce weights? Comparing two approaches to multi-arm studies in networkmeta-analysis.Stat Med2014; 33(25): 4353-4369
 
 The relevant data is given in files in the appropriate folders. 
 
-All codes are in C++ and were written by A Davies (2021).
+All codes were written by A Davies (2021).
 
 ## Folders:
 
@@ -137,8 +137,28 @@ Contains two codes for working out evidence flow networks.
       The length of this file is N(N-1)/2. Every possible pair of nodes is included.
       
       If a certain pair of nodes are not connected by an edge in the evidence flow network then the flow is 0.
-      
-## 4. Results
+
+## 4. RCodeDataResults
+
+R code, data and results to obtain some results in the paper using the R package netmeta. 
+
+  a. HatAgg_Contrib_Depression.R
+
+       R code that reads in the Depression data and works out the following using netmeta:
+            i.   Aggregate hat matrix (hat matrix in Section H.1 of the Supplementary Material)
+            ii.  Contribution matrix using the random walk approach (1st row gives column 2 in Table 4)
+            iii. Contribution matrix using the `Shortest' algorithm approach (1st row gives column 3 in Table 4)
+
+  b. Rucker2014.txt
+
+       Data Frame for the Depression data set (used in Rucker and Schwarzer (2014)).  
+
+  c. Results from the code HatAgg_Contrib_Depression.R saved as excel files.
+            i.   Hat_agg_netmeta.xlsx (aggregate hat matrix for a fixed effect model)
+            ii.  Contrib_randomwalk_netmeta.xlsx (contrbution matrix for a fixed effect model using the random walk approach)
+            iii. Contrib_shortestpath_netmeta.xlsx (contrbution matrix for a fixed effect model using the `Shortest' algorithm)
+
+## 5. Results
 
 Files containing the results from the paper. 
 
