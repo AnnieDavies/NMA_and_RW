@@ -24,13 +24,13 @@ Contains two codes for working out evidence flow networks.
        
        This code was used to obtain the following results in the paper NMA and RW:
        
-         i. The aggregate weight matrix in Appendix F (= aggregate weights listed in Figure 6)
+         i. The aggregate weight matrix in Section H of the Supplement (= aggregate weights listed in Figure 6)
          
-         ii. The hat matrix of the aggregate model listed in Appendix F
+         ii. The hat matrix of the aggregate model listed in Section H of the Supplement
          
  b. EvidenceFlow_RWanalytical.cpp
  
-       Works out the flow of evidence for the comparison source-sink using the analytical RW approach (method described in Section 4.3 and Appendix E).
+       Works out the flow of evidence for the comparison source-sink using the analytical RW approach (method described in Section 4.3 and Section G of the Supplementary Material).
        
        This code was used to obtain the following results in the paper NMA and RW:
        
@@ -140,12 +140,12 @@ Contains two codes for working out evidence flow networks.
 
 ## 4. RCodeDataResults
 
-R code, data and results to obtain some results in the paper using the R package netmeta. 
+R code, data and results to verify some results in the paper with results using the R package netmeta. 
 
   a. HatAgg_Contrib_Depression.R
 
        R code that reads in the Depression data and works out the following using netmeta:
-            i.   Aggregate hat matrix (hat matrix in Section H.1 of the Supplementary Material)
+            i.   Aggregate hat matrix (hat matrix in Section H of the Supplementary Material)
             ii.  Contribution matrix using the random walk approach (1st row gives column 2 in Table 4)
             iii. Contribution matrix using the `Shortest' algorithm approach (1st row gives column 3 in Table 4)
 
@@ -176,7 +176,7 @@ Others are not explicitly presented in the paper.
             
             ii. Av-Stream.txt = 6th column in Table 3 = streams as estimated by the algorithm 'Average'  (code: Algorithmm-Average.cpp)
           
-            iii. Short-Prop.txt = 3rd column in Table 4 = proportion contributions as estimated by the algorithm 'Shortest' (code: Algorithmm-Shortest.cpp)
+            iii. Short-Prop.txt = 3rd column in Table 4 = proportion contributions as estimated by the algorithm 'Shortest' (code: Algorithmm-Shortest.cpp or equivalently HatAgg_Contrib_Depression.R)
             
             iv. Short-Stream.txt = 4th column in Table 3 = streams as estimated by the algorithm 'Shortest'  (code: Algorithmm-Shortest.cpp), paths are labelled by their composite nodes
             
@@ -186,7 +186,7 @@ Others are not explicitly presented in the paper.
           
           All produced from the code AggregateHMatrix.cpp
           
-            i. Hat.txt = hat matrix of the aggregate model (calculated from Eq (5), presented in Appendix F)
+            i. Hat.txt = hat matrix of the aggregate model (calculated from Eq (5), presented in Section H of the Supplement)
             
             ii. LOR_dir.txt = theta^(dir) = direct estimates as log odds ratios (calculated from Eq (1))
             
@@ -196,7 +196,7 @@ Others are not explicitly presented in the paper.
             
             v. OR_net.txt = theta^(net) = network estimates as odds ratios (exponential of LOR_net.txt)
             
-            vi. Wagg.txt = aggregate weight matrix (calculated from Eq (2), presented in Appendix F)
+            vi. Wagg.txt = aggregate weight matrix (calculated from Eq (2), presented in Section H of the Supplement)
             
             vii. Wfull.txt = full adjusted weight matrix (calculated from the adjustment method for multi-arm trials - see Rucker and Schwarzer 2014)
   
@@ -204,9 +204,9 @@ Others are not explicitly presented in the paper.
 
           Results from the random walk approach.
           
-            i. RW_flow_13.txt = the evidence flow for comparison 1-3 of the Depression data as estimated by the analytical RW approach (see Section 4.3 and Appendix E, presented in Figure 7, code: EvidenceFlow_RWanalytical.cpp)
+            i. RW_flow_13.txt = the evidence flow for comparison 1-3 of the Depression data as estimated by the analytical RW approach (see Section 4.3 and Section G of the Supplement, presented in Figure 7, code: EvidenceFlow_RWanalytical.cpp)
             
-            ii. RW_prop.txt = proportion contributions to the network comparison 1-3 in the Depression data as estimated by the RW approach (see Section 5.3, presented in 2nd column of Table 4, code: Streams_contributions_RWanalytical.cpp)
+            ii. RW_prop.txt = proportion contributions to the network comparison 1-3 in the Depression data as estimated by the RW approach (see Section 5.3, presented in 2nd column of Table 4, code: Streams_contributions_RWanalytical.cpp or, equivalently, HatAgg_Contrib_Depression.R)
             
             iii. RW_stream.txt = evidence streams (flow through paths) for the network comparison 1-3 in the Depression data set as estimated by the RW approach (see section 5.3, presented in 3rd column of Table 3, code: Streams_contributions_RWanalytical.cpp)
             
